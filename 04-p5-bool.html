@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coin Flip</title>
+    </head>
+    <body>
+        <p>
+            Choose one side
+        </p>
+        <p>
+            <button
+            onclick="
+            let randomNumber = Math.random();
+            if (randomNumber <= 1/2){
+                alert ('Computer Generated Heads..... You Win.....')
+            }else {
+                alert ('Computer Generated Tails.....You Lose....')
+            }
+            ">
+                Heads
+            </button>
+
+
+
+            <button onclick="
+            randomNumber = Math.random();
+            if (randomNumber <= 1/2){
+                alert ('Computer Generated Heads..... You Lose.....')
+            }else {
+                alert ('Computer Generated Tails.....You win....')
+            }
+            ">
+                Tails
+            </button>
+        </p>
+        <script>
+
+        </script>
+    </body>
+</html>
