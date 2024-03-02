@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>convert celsius to Fahrenheit</title> 
+</head>
+<body>
+    <script>
+        
+        function convertToFahrenheit(celsius){
+            console.log(celsius * 9/5 + 32)
+        }
+        convertToFahrenheit( 37);
+
+        function convertToCelsius(Fahrenheit){
+            console.log((Fahrenheit-32)*5/9);
+        }
+        convertToCelsius(86);
+        
+
+
+        function convertTemp(Temp,unit){
+            if (unit=='C' || unit=='c'){
+                console.log(Temp * 9/5 + 32)
+            }else if (unit == 'f' || unit == 'F') {
+                console.log((Temp-32)*5/9);
+            }else {
+                console.log ('Unit undefined....!!!');
+            }
+        }
+        convertTemp(32,'c');
+        convertTemp(25,'C');
+        convertTemp(100,'f');
+        convertTemp(105,'a');
+    </script>
+</body>
+</html>
